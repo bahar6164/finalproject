@@ -1,0 +1,80 @@
+.aboutus{
+    width: 100%;
+    height: 120px;
+    max-height: 1100px;
+    transition: max-height 0.3s ease;
+    background: linear-gradient(to bottom, #81858b, #81858b21); /* گرادیان اولیه */
+    -webkit-background-clip: text; /* کلیپ کردن پس‌زمینه به متن */
+    -webkit-text-fill-color: transparent; /* رنگ پیش‌فرض شفاف */
+    transition: max-height 0.3s ease;}
+    input[type="checkbox"] {
+        display: none; 
+      }
+   #show-more:checked + .aboutus {
+        height: 1050px; 
+        overflow:visible;
+        -webkit-line-clamp: unset;
+        background: none; 
+        -webkit-background-clip: unset; 
+        color: #81858b; 
+        -webkit-text-fill-color: #81858b; 
+      }
+
+    .aboutus-top{
+        width: 100%;
+        height: inherit;
+        display: flex;
+        .aboutus-text{  
+            gap:10px;
+            width: 70%;
+            height: 100%;
+            padding: 20px;
+            overflow:hidden;
+
+            
+            p{
+                font-family: var(--fontFamily);
+                font-size: 12px;
+                color:#a1a3a8;
+                line-height: 20px;
+            }
+            h1{
+                font-family: var(--fontFamily);
+                font-size: 18px;
+                color:#2b2b2b;
+            }
+            h2{
+                font-family: var(--fontFamily);
+                font-size: 16px;
+                color:#2b2b2b;
+            }
+        }
+        .Permissions{
+            width: 130px;
+            height: 130px;
+            display: flex;
+            border: 1px solid #f2f2f1;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 74px;
+                height: 74px
+            }
+        }
+    }
+
+    .more{  
+        display: inline-block;
+        margin-top: 10px;
+        cursor: pointer;
+        width: 100%;
+        height: 40px;
+        padding: 20px;
+        font-family: var(--fontFamily);
+        font-size: 12px;
+        color: #19bfd3;
+        a{
+        text-decoration: none;
+        }
+    }

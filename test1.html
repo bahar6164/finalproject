@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مشاهده بیشتر با CSS</title>
+<style>
+  .content {
+    max-height: 100px; /* حداکثر ارتفاع اولیه */
+    overflow: hidden; /* محتوای اضافی را مخفی می‌کند */
+    transition: max-height 0.3s ease; /* اضافه کردن افکت روان */
+  }
+
+  input[type="checkbox"] {
+    display: none; /* مخفی کردن چک‌باکس */
+  }
+
+  input[type="checkbox"]:checked + .content {
+    max-height: 500px; /* ارتفاع بیشتر وقتی انتخاب شد */
+  }
+
+  .show-more-label {
+    display: inline-block;
+    margin-top: 10px;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<h1>مشاهده بیشتر فقط با CSS</h1>
+
+<div>
+  <input type="checkbox" id="show-more">
+  <div class="content">
+    <p>این یک متن نمونه است. برای مشاهده بیشتر روی لینک زیر کلیک کنید.</p>
+    <p>بخش‌های اضافی اینجا نمایش داده خواهند شد.</p>
+    <p>متن اضافه‌ای که معمولاً در یک قسمت مخفی قرار می‌گیرد.</p>
+  </div>
+  <label for="show-more" class="show-more-label">مشاهده بیشتر</label>
+</div>
+
+</body>
+</html>

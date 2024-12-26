@@ -131,8 +131,6 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            
-            
                     }
                   .swiper-slider-item{
                     width: 82px;
@@ -178,12 +176,13 @@
                     height: 100%;
                     display: flex;
                     padding: 20px;
-        
                     align-content: center;
                     a{
                         text-decoration: none;
                         color: #525256;
+                      
                     }
+  
                     .cities-item-right-city{
                         font-family: var(--fontFamily);
                         font-size: 14px;

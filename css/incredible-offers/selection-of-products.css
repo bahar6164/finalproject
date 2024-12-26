@@ -119,7 +119,6 @@
         border-radius: 20px; 
         overflow: auto;
         overflow: hidden;
-        background-color: green;
         .selection-of-products-item{
             width: fit-content;
             height:fit-content;

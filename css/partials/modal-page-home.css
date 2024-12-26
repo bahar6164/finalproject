@@ -1,6 +1,6 @@
 
         /* Background style modal*/
- .modal-background {
+ .modal-background{
             display: none;
             position: fixed;
             top: 0;
@@ -14,7 +14,7 @@
         }
 
         /* استایل برای محتوای مودال */
-.modal-content {
+.modal-content-city {
             width: 480px;
             height: 580px;
             background-color: white;
@@ -22,12 +22,12 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
 }
-        .modal-content-top{  
+        .modal-content-city-top{  
                 width: 100%;
                 height: 50px;
                 display: flex;
                 border-bottom:  #e9e9e9  solid;
-                .modal-content-top-right{
+                .modal-content-city-top-right{
                 width: 50%;
                 height: 100%;
                 display: flex;
@@ -37,7 +37,7 @@
                 font-family: var(--fontFamily);
                 color: #0c0c0c;
                 }
-                .modal-content-top-left{
+                .modal-content-city-top-left{
                     width: 50%;
                     height: 100%;
                     display: flex;
@@ -48,12 +48,12 @@
                     cursor: pointer;
                 }
         }   
-        .modal-content-body{
+        .modal-content-city-body{
             width:98%;
             height: 530px;
             max-height: 530px;
             background-color: white;
-            .modal-content-search{
+            .modal-content-city-search{
                     width: 100%;
                     height:58px;
                     display: inline-block;
@@ -75,7 +75,7 @@
                 }
             }
         }
-            .modal-content-massage{
+            .modal-content-city-massage{
                 width: 100%;
                 height: 30px;
                 display: inline-block;
